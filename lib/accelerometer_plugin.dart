@@ -49,7 +49,6 @@ class AccelerometerPlugin {
 
   /// Starts the accelerometer with the specified update rate
   static Future<bool> startAccelerometer(SensorUpdateRate rate) async {
-    print('object');
     try {
       final result = await _methodChannel.invokeMethod<bool>(
         'startAccelerometer',
